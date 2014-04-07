@@ -1,0 +1,81 @@
+/* Borders */
+.border{border: 1px solid #ccc;}
+
+/* Widths */
+.width25{width:25px;min-width:25px;max-width:25px;}
+.width50{width:50px;min-width:50px;max-width:50px;}
+.width75{width:75px;min-width:75px;max-width:75px;}
+.width100{width:100px;min-width:100px;max-width:100px;}
+.width125{width:125px;min-width:125px;max-width:125px;}
+.width150{width:150x;min-width:150px;max-width:150px;}
+.width175{width:175x;min-width:175px;max-width:150px;}
+.width200{width:200x;min-width:200px;max-width:200px;}
+.width225{width:225x;min-width:225px;max-width:225px;}
+.width250{width:250x;min-width:250px;max-width:250px;}
+
+/* Bottom Spacers */
+.bottomSpacer5{margin-bottom:5px;}
+.bottomSpacer{margin-bottom:10px;}
+.bottomSpacer15{margin-bottom:15px;}
+.bottomSpacer20{margin-bottom:20px;}
+.bottomSpacer25{margin-bottom:25px;}
+.bottomSpacer30{margin-bottom:30px;}
+
+/* Top Spacers */
+.topSpacer5{margin-top:5px;}
+.topSpacer{margin-top:10px;}
+.topSpacer15{margin-top:15px;}
+.topSpacer20{margin-top:20px;}
+.topSpacer25{margin-top:25px;}
+.topSpacer30{margin-top:30px;}
+
+/* Left Spacers */
+.ml5{margin-left:5px;}
+.ml{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+
+/* Right Spacers */
+.mr5{margin-right:5px;}
+.mr{margin-right:10px;}
+.mr15{margin-right:15px;}
+.mr20{margin-right:20px;}
+
+/* Right and Left Spacer */
+.mlr5{margin-right:5px;margin-left:5px;}
+.mlr{margin-right:10px;margin-left:10px;}
+.mlr15{margin-right:15px;margin-left:15px;}
+.mlr20{margin-right:20px;margin-left:20px;}
+
+/* Padding */
+.p5{padding:5px;}.p10{padding:10px;}.p15{padding:15px;}.p20{padding:20px;}
+
+/* Padding left / right */
+.plr5{padding:0px 5px;}.plr{padding:0px 10px;}.plr15{padding:0px 15px;}.plr20{padding:0px 20px;}
+
+.inline{display:inline-block;}
+.left{float:left;}
+.right{float:right;}
+
+input{padding:1px 0 1px 5px;}
+
+.pointer{cursor:pointer;}
+
+/* Text Alignment */
+.tac{text-align:center;}
+.tal{text-align:left;}
+.tar{text-align:right;}
+
+/* Modal Styels */
+.modal-header{padding:0px 10px;}
+.modal-body{padding:5px 10px;}
+.modal-footer {padding: 10px;margin-top: 0px;}
+.addUserSuccess .modal-content{width:450px;height:250px;}
+
+
+.cell{border-left:1px solid #ccc;border-bottom:1px solid #ccc;}
+.white{background-color:white;}
+.black{background-color:black;}
+
+#bit-profile-container{width:555px;vertical-align:top;}
+#pyramid-container{border-top:1px solid #ccc;border-right:1px solid #ccc;margin:0px auto;}

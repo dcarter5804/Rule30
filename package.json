@@ -1,0 +1,8 @@
+{
+  "name": "UserApp",
+  "description": "Rule 30 Implementation",
+  "author": "Derek Carter <dcarter5804@gmail.com>",
+  "dependencies": {
+    "express": "x"
+  }
+}

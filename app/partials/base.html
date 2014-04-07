@@ -1,0 +1,43 @@
+<div class="container">
+
+	<div class="bottomSpacer20">
+	
+		<div class="inline border mr plr bottomSpacer20" style="width:335px">
+	
+			<form data-ng-submit="directives.rule30.calcRule30()">
+				<div class="bottomSpacer5">
+					<span class="inline width225">Number of Generations to render:</span>
+					<input data-ng-model="directives.rule30.numOfGenerations" type="text" style="width:50px;" maxlength="3"/>				
+				</div>
+				<div class="bottomSpacer5">
+					<span class="inline width225"">"1" Bit Color:</span>
+					<input data-ng-model="directives.rule30.oneColor" type="text" style="width:80px;"/>				
+				</div>
+				<div class="bottomSpacer">
+					<span class="inline width225"">"0" Bit Color:</span>
+					<input data-ng-model="directives.rule30.zeroColor" type="text" style="width:80px;"/>				
+				</div>
+				<button type="submit" class="btn btn-primary">Update</button>
+				<button data-ng-click="directives.rule30.startAutomation()" class="btn btn-success mlr">Start</button>
+				<button data-ng-click="directives.rule30.stopAutomation()"  class="btn btn-danger mr">Stop</button>
+				<button data-ng-click="directives.rule30.reset()"  class="btn mr">Clear</button>             
+								
+			</form>
+			
+		</div>
+		 
+		<div id="bit-profile-container" class="inline">
+			<div class="inline mr5" style="width:64px;vertical-align: top;height: 134px;" data-ng-repeat="profile in directives.rule30.bitProfiles">			
+				<bit-profile profile="profile"></bit-profile>
+			</div>
+		</div>
+			
+	</div>
+
+	<div id="pyramid-container" data-ng-style="{width : directives.rule30.calculatedWidth}">
+		<triangle></triangle>		
+	</div>
+	
+	
+
+</div>
