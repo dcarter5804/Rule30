@@ -18,7 +18,7 @@
 					<input data-ng-model="directives.rule30.zeroColor" type="text" style="width:80px;"/>				
 				</div>
 				<button type="submit" class="btn btn-primary">Update</button>
-				<button data-ng-click="directives.rule30.startAutomation()" class="btn btn-success mlr">Start</button>
+				<button data-ng-click="directives.rule30.startAutomation()" class="btn btn-success mlr" ng-disabled="directives.rule30.startDisabled">Start</button>
 				<button data-ng-click="directives.rule30.stopAutomation()"  class="btn btn-danger mr">Stop</button>
 				<button data-ng-click="directives.rule30.reset()"  class="btn mr">Clear</button>             
 								

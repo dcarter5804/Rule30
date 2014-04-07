@@ -33,10 +33,11 @@ angular.module('Rule30.directives.components', [])
 				scope.directives.rule30.calculatedWidth = 0;
 				scope.directives.rule30.oneColor = 'black';
 				scope.directives.rule30.zeroColor = 'white';
+				scope.directives.rule30.startDisabled = false;
 				
 				/* Internal Variables */
 				var _Zoom = {
-						1 : 20,
+						1 : 15,
 						2 : 12,
 						3 : 6,
 						4 : 5,
@@ -82,22 +83,26 @@ angular.module('Rule30.directives.components', [])
 				
 				// Start the automation
 				scope.directives.rule30.startAutomation = function () {
+					scope.directives.rule30.startDisabled = true;
+					
 					_AutomationInterval = $interval(function () {
 						scope.directives.rule30.numOfGenerations = parseInt(scope.directives.rule30.numOfGenerations) + 1;
 						scope.directives.rule30.calcRule30();
-					},10);
+					},100);					
 				}
 				
 				// Stop the automation
 				scope.directives.rule30.stopAutomation = function () {
 					$interval.cancel(_AutomationInterval);
+					scope.directives.rule30.startDisabled = false;
 				}
 				
 				// Reset the interface
 				scope.directives.rule30.reset = function () {
 					scope.directives.rule30.numOfGenerations = 0;
 					scope.directives.rule30.stopAutomation();
-					clearData();					
+					clearData();		
+					scope.directives.rule30.startDisabled = false;
 				}
 				
 				// Iterate through the generations and populate the generations array
