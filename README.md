@@ -11,7 +11,7 @@ Requirements
 
 Installation & Run
 =======================
-- Clone this repository:
+- Clone this repository: https://github.com/dcarter5804/Rule30.git
 - Change directory to Rule30
 - Issue Command: npm install
 - Issue Command: node server.js &
