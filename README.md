@@ -7,7 +7,7 @@ Requirements
 =======================
 - git installation
 - node.js installation
-=======================
+
 
 Installation & Run
 =======================
